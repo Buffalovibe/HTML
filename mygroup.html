@@ -1,0 +1,223 @@
+# Одностраничный сайт «Наш класс»
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш класс</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #357abd;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .teacher {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .teacher img {
+            width: 220px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .teacher-text {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .students {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .student-card {
+            background: #f8f9fc;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .student-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .student-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .student-card h3 {
+            margin-bottom: 10px;
+            color: #357abd;
+        }
+
+        footer {
+            text-align: center;
+            background: #357abd;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .teacher {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Наш дружная группа 2ИСиП-24</h1>
+    <p>Сайт студентов и классного руководителя</p>
+</header>
+
+<div class="container">
+
+    <section class="section">
+        <h2>Классный руководитель</h2>
+
+        <div class="teacher">
+            <img src="ramil.png">
+
+            <div class="teacher-text">
+                <p>
+                    Наш классный руководитель — добрый, отзывчивый и
+                    внимательный учитель. Он всегда помогает ученикам,
+                    поддерживает нас в учебе и школьных мероприятиях.
+                </p>
+
+                <br>
+
+                <p>
+                    Благодаря нашему учителю в классе царит дружная
+                    атмосфера и взаимопонимание.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Ученики класса</h2>
+
+        <div class="students">
+
+            <div class="student-card">
+                <img src="https://via.placeholder.com/120" alt="Ученик">
+                <h3>Кирилл Уласевич</h3>
+                <p>Староста.</p>
+            </div>
+
+            <div class="student-card">
+                <img src="https://via.placeholder.com/120" alt="Ученица">
+                <h3>Илья Рябцев</h3>
+                <p>Прогульщик.</p>
+            </div>
+
+            <div class="student-card">
+                <img src="https://via.placeholder.com/120" alt="Ученик">
+                <h3>Радион Набоков</h3>
+                <p>Студент.</p>
+            </div>
+
+            <div class="student-card">
+                <img src="https://via.placeholder.com/120" alt="Ученица">
+                <h3>Сергей Ожигов</h3>
+                <p>Студент.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>О нашем классе</h2>
+
+        <p style="font-size:18px; line-height:1.7; text-align:center;">
+            Наша группа очень дружная и активная. Мы участвуем
+            в олимпиадах, конкурсах, спортивных соревнованиях
+            и школьных праздниках. Мы всегда поддерживаем
+            друг друга и стараемся добиваться успехов вместе.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>Практическая работа по HTML © 2025</p>
+</footer>
+
+</body>
+</html>
+```
+
+## Как использовать
+
+1. Создай файл `index.html`
+2. Вставь в него весь код
+3. Открой файл в браузере
+
+Можно заменить картинки на свои фотографии:
+
+```html
+<img src="photo.jpg">
+```
